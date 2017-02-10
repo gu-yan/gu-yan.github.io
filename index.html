@@ -11,8 +11,25 @@
 
 </head>
 
-<body>
-
-  
+<body onload="showLeftTime()"  bgcolor="#000000">
+  <div id="time" style="color:#00FF00">
+  </div>
 </body>
+<script language="javascript" type="text/javascript">
+<!--
+var initTime = (new Date()).getTime();
+function showLeftTime()
+{
+    var now = new Date();
+    var year = now.getYear();
+    var month = now.getMonth();
+    var day = now.getDate();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    document.getElementById("type1").innerHTML = "" + year + " 年 " + month + " 月 " + day + " 日 " + hours + " : " + minutes + " : " + seconds +"";
+    setTimeout(showLeftTime,1000);
+}
+//-->
+</script>
 </html>
