@@ -1,2 +1,2 @@
 # gu-yan.github.io
-Welcome to Yan(Julius).Gu homepage
+Welcome to Yann Gu homepage
